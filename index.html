@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Rifunze</h1>
+
+    <nav>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('about')">About</button>
+        <button onclick="showSection('projects')">Projects</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Hello, I'm Nevhulora Rifunze</h2>
+    <p>I am a Computer Science student with an interest in software development and web technologies</p>
+    <img src="profile.jpg" alt="portrait of Nevhulora Rifunze" width="150">
+    <button onclick="showALLSections()">View Me</button>
+</section>
+<section id="about" style="display:none;">
+    <h2>About Me</h2>
+    <h3>Academic Background</h3>
+    <p>I am currently studying Computer science at University of Venda, i am learning programming , web development and basic software desgin.</p>
+
+    <h3>Skills</h3>
+    <ul>
+        <li>HTML & CSS</li>
+        <li>Basic JavaScript</li>
+        <li>Problem Solving</li>
+    </ul>
+
+    <h3>Goals</h3>
+    <p>My goal is to become a professional web developer and build user-friendly applications.</p>
+    </section>
+
+<section id="projects" style="display:none;">
+    <h2>Projects</h2>
+
+    <h3>Project 1</h3>
+    <p>personal portfolio.</p>
+    <p>A personal portfolio websites built using HTML, CSS and Javascript optional.</p>
+    <p>It icludes a homepage, about section, skills and contact information.</p>
+     <p><strong>Tools used:</strong> HTML, CSS, JavaScript</p>
+
+    <h3>Project 2</h3>
+    <p>Login form</p>
+    <p>A simple login form that allows the users to enter a username and password.It demonstrates basic form design and user input handling .</p>
+    <p><strong>Tools used:</strong> HTML, CSS, JavaScript</p>
+</section>
+ 
+<section id="contact" style="display:none;">
+    <h2>Contact Me</h2>
+
+    <p><strong>Email:</strong> 
+        <a href="mailto:nevhulorarifunze@gmail.com">
+            nevhulorarifunze@gmail.com
+        </a>
+    </p>
+
+    <p><strong>GitHub:</strong> 
+        <a href="https://github.com/Rifunze77" target="_blank">
+            My GitHub
+        </a>
+    </p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+    
