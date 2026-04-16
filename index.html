@@ -3,25 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
     <link rel="stylesheet" href="CSS/style.css">
-    <title>My Personal Portfolio</title>
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>This is an introduction about myself.</p>
-            <img src="images/profile.jpg" alt="Profile Picture">
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <p>Here are some of my projects.</p>
-            <img src="images/project1.jpg" alt="Project 1">
-            <img src="images/project2.jpg" alt="Project 2">
-        </section>
-    </main>
+
+<header>
+    <h1>Rifunze</h1>
+
+    <nav>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('about')">About</button>
+        <button onclick="showSection('projects')">Projects</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Hello, I'm Nevhulora Rifunze</h2>
+    <p>I am a Computer Science and Mathematics student with an interest in software development and web technologies.</p>
+    <img src="images/profile.jpg" alt="portrait of Nevhulora Rifunze" width="150">
+    <button onclick="showALLSections()">View Me</button>
+</section>
+<section id="about" style="display:none;">
+    <h2>About Me</h2>
+    <h3>Academic Background</h3>
+    <p>I am currently studying Bsc in Computer science and Mathematics at University of Venda, i am learning programming , web development and basic software desgin.</p>
+
+    <h3>Skills</h3>
+    <ul>
+        <li>HTML & CSS</li>
+        <li>Basic JavaScript</li>
+        <li>Problem Solving</li>
+    </ul>
+
+    <h3>Goals</h3>
+    <p>My goal is to become a professional web developer and build user-friendly applications.</p>
+    </section>
+
+<section id="projects" style="display:none;">
+    <h2>Projects</h2>
+
+    <h3>Project 1</h3>
+    <p>personal portfolio website</p>
+      <img src="images/portfolio.jpg" alt="Screenshot of my portfolio website" width="300">
+    <p>A personal portfolio websites built using HTML, CSS and Javascript.It includes multiple sections such as Home, About, skills and contact with interactive navigation.</p>
+     <p><strong>Tools used:</strong> HTML, CSS, JavaScript</p>
+
+    <h3>Project 2</h3>
+    <p>Login form</p>
+    <img src="images/login.jpg" alt="Screenshot of login form" width="300">
+    <p>A simple login form that allows the users to enter a username and password.When the login button is clicked the system displays a message to show that the login button is working and the in[...]</p>
+    <p><strong>Tools used:</strong>Java</p>
+</section>
+ 
+<section id="contact" style="display:none;">
+    <h2>Contact Me</h2>
+
+    <p><strong>Email:</strong> 
+        <a href="mailto:nevhulorarifunze@gmail.com">
+            nevhulorarifunze@gmail.com
+        </a>
+    </p>
+
+    <p><strong>GitHub:</strong> 
+        <a href="https://github.com/Rifunze77" target="_blank">
+            My GitHub
+        </a>
+    </p>
+</section>
+
+<script src="JS/script.js"></script>
 </body>
 </html>
